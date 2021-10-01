@@ -1,1 +1,88 @@
-khvcuchc
+select * from cat_model
+select * from cat_manufacturer
+
+select * from usuarios
+
+
+/*
+se filtra manufacturer menor o igual a 10 y id de model menor o igual a 10 where model id sea menor a 5
+se imprime los resultados menores a 5
+*/
+select cmdl.manufacturer_id, cmfr.id 
+from cat_model cmdl
+inner join cat_manufacturer cmfr
+on cmdl.manufacturer_id =  cmfr.id AND cmdl.manufacturer_id <=10 and  cmfr.id <=10
+where cmdl.id <5
+
+
+/*        
+--------------------------------------------------------------------------------
+*/
+/* has un listado por abcedario de la culumna nombre de la tabla cat_model
+*/
+select  cmdl.nombre, cmfr.nombre 
+from cat_model cmdl
+inner join cat_manufacturer cmfr
+on cmdl.manufacturer_id =  cmfr.id
+where cmdl.id <20 order by cmdl.nombre
+
+/*cuentame cuantos datos hay en las culumas de id de la tabla cat_model y tabla cat_manufacurer
+*/
+select count(cmdl.id), count(cmfr.id) 
+from cat_model cmdl
+inner join cat_manufacturer cmfr
+on cmdl.manufacturer_id =  cmfr.id
+
+
+/*
+group by 
+*/
+select * from usuarios
+
+select count(id), apellido_paterno
+from usuarios
+group by apellido_paterno
+
+
+/*
+having
+*/
+SELECT COUNT(id), apellido_paterno
+FROM usuarios
+GROUP BY apellido_paterno
+HAVING COUNT(id) > 2;
+
+/*
+distinct 
+*/
+select  count(*) as apellido_paterno
+from (SELECT  DISTINCT  apellido_materno from )
+
+SELECT Count(DISTINCT apellido_paterno) AS DistinctCountries
+FROM usuarios
+
+
+/*between*/
+
+select * from usuarios 
+where id between 2 and 5
+
+
+
+
+
+
+
+
+SELECT u.id, r.nombre, usu.nombre_usu,est.name
+FROM usuarios u 
+LEFT JOIN roles r 
+ON u.id_rol = r.id
+
+LEFT JOIN (
+SELECT id, TRIM(nombre||' '||apellido_paterno||' '||apellido_materno) nombre_usu 
+FROM usuarios )
+usu 
+ON u.id = usu.id 
+
+LEFT JOIN af_status est ON u.estatus = est.id ;
