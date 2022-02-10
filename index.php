@@ -1,3 +1,7 @@
+<?php
+include_once ("header/header.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
