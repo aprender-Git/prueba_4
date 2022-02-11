@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Profile Card Design</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
 </head>
 <body>
