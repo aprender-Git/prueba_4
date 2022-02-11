@@ -7,7 +7,10 @@
 <body>
     <div class="profile-card">
     <div class="image-container">
-
+        <img src="img\perro.png" style="width: 100%">
+        <div class="title ">
+            <h2>Rocky</h2>
+        </div>
     </div>
 
     </div>
