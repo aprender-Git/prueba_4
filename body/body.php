@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página card</title>
-    <link rel="stylesheet" href="body/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="css/dark.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
 </head>
-<body>
-<h1>Nuestro equipo de expertos con git</h1>
+
+<body class="">
+
+    <h1>Nuestro equipo de expertos</h1>
     <p class="descripcion">Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición
         tipográfica</p>
-        
-        <section class="card">
+
+    <!-- <div class="modo" id="modo">
+        <i class="fas fa-toggle-on"></i>
+    </div> -->
+
+    <section class="card">
         <div class="card__perfil">
             <div class="card__nombre">
                 <img src="https://www.markuptag.com/images/user-img-1.jpg" alt="">
@@ -50,7 +58,6 @@
                 <a class="enlace" href="#">Saber más</a>
             </div>
         </div>
-
         <div class="card__perfil">
             <div class="card__nombre">
                 <img src="https://www.markuptag.com/images/user-img-3.jpg" alt="">
@@ -70,11 +77,7 @@
         </div>
     </section>
 
-
+    <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
-
-
-
