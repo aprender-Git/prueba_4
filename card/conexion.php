@@ -25,7 +25,7 @@ default = "aretha"
 
 ; engine = POSTGRESQL|MYSQL|SQLSERVER
 database_aretha['engine']     = POSTGRESQL
-database_aretha['name']       = "jcf"
+database_aretha['name']       = "mascotas"
 database_aretha['user']       = "jcf_usr"
 database_aretha['password']   = "7j4c6fu8sr"
 database_aretha['port']       = "5432"
