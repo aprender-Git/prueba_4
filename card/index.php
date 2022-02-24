@@ -21,7 +21,7 @@
                     <div class="card-body">
                         <form method="post" action="" id="frmImg">
                             <input type="file" name="imagen" id="img" class="d-none">
-                            <img src="" alt="" id="imgprevia" class="img-thumbnail">
+                            <img src="" alt=""  id="imgprevia" class="img-thumbnail">
                             <div class="form-group">
                                 <label for="comentario">Comentario</label>
                                 <textarea id="comentario" class="form-control" name="comentario" rows="3"></textarea>

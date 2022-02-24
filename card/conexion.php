@@ -1,33 +1,14 @@
-; <?php exit(); __halt_compiler();
-; This is the main Aretha configuration file.  It contains the
-; configuration directives that give the framework its instructions.
-; See <URL:> for detailed information.
-; In particular, see 
-; <URL:>
-; for a discussion of each configuration directive.
 
-; Do NOT simply read the instructions in here without understanding
-; what they do.  They're here only as hints or reminders.  If you are unsure
-; consult the online docs. You have been warned.  
+<?php
+	try {
+		$hostname = "localhost";
+		$dbname = "fetch";
+		$username = "postgres";
+		$pw = "123456";
+		$db = new PDO('pgsql:host='.$hostname.';dbname='.$dbname.'', $username, $pw);
+	} catch (PDOException $ex) {
+		echo "Error al conectar a la base de datos: " . $ex->getMessage() . "\n";
+		exit;
+	}
 
-; Aretha Settings ------------------------------------------------------
-[aretha_settings]
-
-plainobject_path = "plainObjects";
-entities_path    = "entities";
-
-; Database Settings ----------------------------------------------------
-; To add a new database use: database_yourdatabase
-[database_settings]
-
-; Default database - "autoloaded"
-default = "aretha"
-
-; engine = POSTGRESQL|MYSQL|SQLSERVER
-database_aretha['engine']     = POSTGRESQL
-database_aretha['name']       = "mascotas"
-database_aretha['user']       = "mascotas_usr"
-database_aretha['password']   = "7j4c6fu8sr"
-database_aretha['port']       = "5432"
-database_aretha['host']       = "localhost"
-database_aretha['persistent'] = false
+?>
