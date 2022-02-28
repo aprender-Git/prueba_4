@@ -27,7 +27,7 @@
         <div class="card__perfil">
             <div class="card__nombre">
                 <img src="https://www.markuptag.com/images/user-img-1.jpg" alt="">
-                <h2>Rajnish Kumar</h2>
+                <h2>arturo</h2>
                 <p>Diseñador web</p>
             </div>
             <hr>
