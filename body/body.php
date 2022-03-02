@@ -15,67 +15,107 @@
 
 <body class="">
 
-    <h1>Nuestro equipo de expertos</h1>
-    <p class="descripcion">Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición
-        tipográfica</p>
+    <section class="contenedor">
 
-    <!-- <div class="modo" id="modo">
-        <i class="fas fa-toggle-on"></i>
-    </div> -->
+                <div class="card card__perfil" >
+                    <div class="espacio">
+                    <img class="card-img-top img_card" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/15665/production/_107435678_perro1.jpg.webp" alt="Card image">
 
-    <section class="card">
-        <div class="card__perfil">
-            <div class="card__nombre">
-                <img src="https://www.markuptag.com/images/user-img-1.jpg" alt="">
-                <h2>arturo</h2>
-                <p>Diseñador web</p>
-            </div>
-            <hr>
-            <div class="card__descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
-                    veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum temporibus
-                    rerum hic iste nulla vitae?</p>
-            </div>
-            <hr>
-            <div class="card__button">
-                <a class="enlace" href="#">Saber más</a>
-            </div>
-        </div>
-        <div class="card__perfil">
-            <div class="card__nombre">
-                <img src="https://www.markuptag.com/images/user-img-2.jpg" alt="">
-                <h2>Satyam Tiwari</h2>
-                <p>Desarrollador web</p>
-            </div>
-            <hr>
-            <div class="card__descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
-                    veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum temporibus
-                    rerum hic iste nulla vitae?</p>
-            </div>
-            <hr>
-            <div class="card__button">
-                <a class="enlace" href="#">Saber más</a>
-            </div>
-        </div>
-        <div class="card__perfil">
-            <div class="card__nombre">
-                <img src="https://www.markuptag.com/images/user-img-3.jpg" alt="">
-                <h2>Salim Malik</h2>
-                <p>Desarrollador front-end</p>
-            </div>
-            <hr>
-            <div class="card__descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
-                    veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum temporibus
-                    rerum hic iste nulla vitae?</p>
-            </div>
-            <hr>
-            <div class="card__button">
-                <a class="enlace" href="#">Saber más</a>
-            </div>
-        </div>
+                    </div>
+                <div class="card-body">
+                    <h4 class="card-title card__nombre">perro 1</h4>
+                    <p class="card-text">
+                        
+                        Raza aparente: Pastor <br>
+                        tamaño :  mediano <br>
+                        Edad :  2 años <br>
+                        Sexo : macho <br>
+                        Sociable : niños y adultos 
+                      
+                    </p>
+
+                    <div class="card__button">
+                        <button type="button" class="btn btn-success">Adoptar</button>
+                        <button type="button" class="btn btn-info">Ver mas</button>
+                    </div>
+
+                </div>
+                </div>
+
+                  <div class="card card__perfil" >
+                  <div class="espacio">                 
+                      <img class="card-img-top img_card" src="https://dam.ngenespanol.com/wp-content/uploads/2019/06/mirada-perros-770x395.png" alt="Card image">
+                  </div>
+
+                <div class="card-body">
+                    <h4 class="card-title card__nombre">perro 2</h4>
+                    <p class="card-text">
+                        
+                        Raza aparente: Pastor <br>
+                        tamaño :  mediano <br>
+                        Edad :  2 años <br>
+                        Sexo : macho <br>
+                        Sociable : niños y adultos 
+                      
+                    </p>
+
+                    <div class="card__button">
+                        <button type="button" class="btn btn-success">Adoptar</button>
+                        <button type="button" class="btn btn-info">Ver mas</button>
+                    </div>
+
+                </div>
+                </div>
+
+                <div class="card card__perfil" >
+                <div class="espacio">                 
+                <img class="card-img-top img_card" src="https://www.redaccionmedica.com/images/destacados/coronavirus-perros-no-necesitan-mascarillas-porque-no-se-contagian--5615_620x368.jpg" alt="Card image">
+                  </div>
+                <div class="card-body">
+                    <h4 class="card-title card__nombre">perro 3</h4>
+                    <p class="card-text">
+                        
+                        Raza aparente: Pastor <br>
+                        tamaño :  mediano <br>
+                        Edad :  2 años <br>
+                        Sexo : macho <br>
+                        Sociable : niños y adultos 
+                      
+                    </p>
+
+                    <div class="card__button">
+                        <button type="button" class="btn btn-success">Adoptar</button>
+                        <button type="button" class="btn btn-info">Ver mas</button>
+                    </div>
+
+                </div>
+                </div>
+                  <div class="card card__perfil" >
+                  <div class="espacio">                 
+                  <img class="card-img-top img_card" src="https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/la-busqueda-de-un-hogar-la-segunda-oportunidad-de-los-perros-de-laboratorio/8391910-1-esl-MX/La-busqueda-de-un-hogar-la-segunda-oportunidad-de-los-perros-de-laboratorio.jpg" alt="Card image">
+                  </div>
+                <div class="card-body">
+                    <h4 class="card-title card__nombre">perro 4</h4>
+                    <p class="card-text">
+                        
+                        Raza aparente: Pastor <br>
+                        tamaño :  mediano <br>
+                        Edad :  2 años <br>
+                        Sexo : macho <br>
+                        Sociable : niños y adultos 
+                      
+                    </p>
+
+                    <div class="card__button">
+                        <button type="button" class="btn btn-success">Adoptar</button>
+                        <button type="button" class="btn btn-info">Ver mas</button>
+                    </div>
+
+                </div>
+                </div>
+
     </section>
+
 
     <script src="js/main.js"></script>
 </body>
