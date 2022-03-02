@@ -19,7 +19,7 @@ private $fechaEncontrado    = "";
 private $color              = "";
 private $usuarioPublico     = "";         
 private $folio              = "";
-private $Estatus            = 0;  
+private $estatus            = 0;  
 private $queryGen           ="";
 
 //creacion de setter y getter
@@ -96,9 +96,43 @@ public function setRasgosParticulares($rasgosParticulares){
 public function getRasgosParticulares(){ 
 return $this->rasgosParticulares;
 }
+public function setFechaEncontrado($fechaEncontrado){
+$this->fechaEncontrado = $fechaEncontrado;
+}
+public function getFechaEncontrado(){
+    return $this->fechaEncontrado;
+}
+public function setColor($color){
+    $this->color =$color;
+}
+public function getColor(){
+    return $this->color;
+}
+public function setUsuarioPublico($usuarioPublico){
+    $this->usuarioPublico = $usuarioPublico;
+}
+public function getUsuarioPublico(){
+    return $this->usuarioPublico;
+}
 
-
-
+public  function setFolio($folio){
+    $this->folio = $folio;
+}
+public function getFolio(){
+    return $this->folio;
+}
+public function setEstatus($estatus){
+    $this->estatus = $estatus;
+}
+public function getEstatus(){
+    return $this->estatus;
+}
+public function setQueryGen($queryGen){
+    $this->queryGen = $queryGen;
+}
+public  function getQueryGen(){
+    return $this->queryGen;
+}
 
 }//clase ends
 
