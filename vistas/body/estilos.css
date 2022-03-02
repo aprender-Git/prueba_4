@@ -59,6 +59,20 @@ hr{
 .card__button{
     text-align: center;
 }
-
+.botones{
+    width: 130px !important;
+    border-radius: 50px!important;
+    height: 40px!important;
+ 
+ }
+ .texto{
+     text-align: end!important;
+     padding-left:unset!important;
+ }
+ .texto2{
+     text-align: start!important;
+ }
+ 
+ 
 
 
