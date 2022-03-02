@@ -59,10 +59,38 @@
                       
                     </p>
 
-                    <div class="card__button">
-                        <button type="button" class="btn btn-success">Adoptar</button>
-                        <button type="button" class="btn btn-info">Ver mas</button>
-                    </div>
+                   
+
+
+                                <div class="row ">
+                                                <div class="col-6   texto">
+                                                    <button type="button" class="btn btn-success botones">
+                                                        <i class='fas fa-dog' style='font-size:16px'></i>
+                                                    Adoptar
+                                                    </button>
+                                                </div>
+
+                                                <div class="col-6   texto2">
+                                                <button type="button" class="btn btn-info botones">
+                                                    
+                                                <i class='fas fa-paw' style='font-size:16px'></i> Ver mas
+                                                </button>
+                                                <br>
+                                </div>
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div>
 
                 </div>
                 </div>
