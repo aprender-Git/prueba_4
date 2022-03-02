@@ -3,8 +3,8 @@
 <head>
   <title>plantilla para mascotas</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="body/estilos.css">
-<link rel="stylesheet" href="header/estilo_head.css">
+  <link rel="stylesheet" href="vistas/body/estilos.css">
+<!--link rel="stylesheet" href="header/estilo_head.css"-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
@@ -105,7 +105,7 @@
   </div>
     <div class="col-md-10" style="background-color: rgb(237 237 237);" >
     <?php
- include_once ("body/body.php");
+ include_once ("vistas/body/body.php");
  ?>
     </div>
   </div>
