@@ -1,0 +1,12 @@
+.botones{
+   width: 130px;
+   border-radius: 50px;
+   height: 40px;
+
+}
+.texto{
+    text-align: end;
+}
+.texto2{
+    text-align: start;
+}
