@@ -59,20 +59,36 @@ hr{
 .card__button{
     text-align: center;
 }
+
+/*
+
+Estilo de los botones inicio 
+*/
 .botones{
-    width: 130px !important;
+    width: 105px !important;
     border-radius: 50px!important;
-    height: 40px!important;
+    height: 33px!important;   
+
  
  }
  .texto{
      text-align: end!important;
      padding-left:unset!important;
+     padding-right: 3px !important;
  }
  .texto2{
      text-align: start!important;
+     padding-left:3px !important; 
+
+
+    
  }
- 
+ p.a {
+    font: 15px Arial, sans-serif;
+  }
+ /*
+ Fin estilo botones
+ */
  
 
 
