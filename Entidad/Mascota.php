@@ -1,6 +1,8 @@
 <?php
-include_once "../ObjetosPlanos/MascotasPO.php";
-include_once "../Conexion/Conexion.php";
+//include_once "../ObjetosPlanos/MascotasPO.php";
+include_once "./ObjetosPlanos/MascotasPO.php";
+//include_once "../Conexion/Conexion.php";
+include_once "./Conexion/Conexion.php";
 class mascotas
 {
 private  $POmascotas= "";

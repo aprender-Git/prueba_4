@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <title>plantilla para mascotas</title>
@@ -12,6 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+  
   <!--aqui se agrega el menu e imagen -->
 <div class="header-fluid ">
 <img class="img-fluid " style="width: 100%; max-height: 250px;" src="/prueba_4//vistas/header/img/portada.jpeg" alt="Chania">
