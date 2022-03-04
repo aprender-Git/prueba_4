@@ -25,12 +25,10 @@ class Entidad{
          $consulta = pg_query($cnx, $query);
 
         $result = false;
-        $datos =['1','2','tres',0];
 
         if ($consulta != false) {
             $result =array();
-
-          /* if(pg_numrows($consulta)>0){
+          if(pg_numrows($consulta)>0){
               while ($key= pg_fetch_row($consulta)) {
                 //echo print_r($key);
                 $PO = new PlainObjets;
@@ -40,7 +38,7 @@ class Entidad{
                 $result[]=$PO;
               }
 
-           }*/
+           }
         }
 
 

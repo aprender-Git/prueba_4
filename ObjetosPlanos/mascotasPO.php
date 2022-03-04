@@ -1,5 +1,4 @@
 <?php
-namespace OBJETOS;
 class MascotaPO 
 {
 //creacion de propiedades o campos
