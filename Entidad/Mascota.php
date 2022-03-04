@@ -18,8 +18,7 @@ public function getPO(){
 public function select(){  
    $conexion = new conector_pg();
    $query = sprintf("SELECT id, nombre, sexo, id_tipo, id_raza,  id_pais, id_estado, id_ciudad, cp,latitude,   longitude,rasgos_particulares,fecha_encontrado, color, id_usuario_publico,  folio_extravio, id_status   
-                     FROM mascota 
-                     WHERE id_status =2");
+                     FROM mascota");
     $res=$conexion->consultar($query);
     $result = false;
     if ($res != false) {
