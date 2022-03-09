@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="css/dark.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
 </head>
 
@@ -24,15 +24,37 @@
                     </div>
                 <div class="card-body">
                     <h4 class="card-title card__nombre">perro 1</h4>
-                    <p class="card-text">
-                        
-                        Raza aparente: Pastor <br>
-                        tamaño :  mediano <br>
-                        Edad :  2 años <br>
-                        Sexo : macho <br>
-                        Sociable : niños y adultos 
-                      
-                    </p>
+                    <a href="https://www.facebook.com/sharer.php?u=https://adoptamascota.com/?p=15961" target="_blank" rel="nofollow" class="pet_card_share_icons" data-tooltip="" data-placement="bottom" title="Compartir en Facebook" data-original-title="Facebook">
+
+                          <img class="compartir" id="compartir" class="pet_card_lost_share" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAAAopJREFUSInFl7FSE1EUhr9/k5nYOIShh+iMko7YMQpjfAJCR+daWZo8gfEJCG9weQJjZ0cY0NFu6RIsWOmc0ZnQgSQ5FhBcICGrXMfTJffb+fbu3vPvveIf1GIxLGSNFUQeo9sT7z61XZxk5Fu6NB82JL26NmDW2Om42vBnxqd0ufjCSXo5clBanJ0pTR/+iN6DxxkvFcOy0NYk7hS796nt4sCXGKOSBstCCOBPLJVSYXbGeRML4skUmCzyJi4XwryZTaVhNcCPeKkY1vs5DiRVMI5uYg22d/ZdEyA7CigXwnz/jhYyx7bXil13FLP8MKwQsA4qmPgKtpo9Ierl1JJYuCY19rIndrEAL7XT4wdhKciwLlT+fYFFiNpu27XOZ1gGXguVMY4GWP1DxzWSN32aI5SUkJjbaTuXdF2Iz2agt2Mfk1lVogQKAQx7kz2mMe6JTCoN77Kf4wApn+KazVOsfjV7/7SyAKc5wiCF1Mw2djuuehvhsAKAIG3zo4IP6YX4f1QAMLCzNJlUht3qvSYrsbgUIyamj5k1e6J228WVAYi70fHcTKmNtDYOHJjVJH2TtJZB1bmZUv7+3dLnuBsd/414RICoIXg6/M9ge9C36scvLrrGmHUN6rsdtzHky4Uw38vxHCU+k0YzyVwTJ2upGJaHaTVuHOQEc2AxA2qZn7R6ObY0okvMLMqe8GwYOLfegTyZD6sBqiOmMOveFEJmFu123CMvYrhYnA6xMhEe2OrOvmt66eNW7LqIVJltAX53IAapUs371gds7EK8RPnc+gAM+jTTcD1wXsXnfb55E2NmG8PE83qSOPweNWdnStOSFkdJk59U72cnODu0ZYyKRN6Mbl80r2b7Lz4XErl3kONLAAAAAElFTkSuQmCC" width="24px">
+
+                       </a>
+                    
+
+                    <div class="container-fluid" id="descripcion">
+                                            
+                        <div class="left" id="tam">
+                            <div class="cont">Raza Aparente:</div>
+                            <div class="cont">Tamaño:</div>
+                            <div class="cont">Edad:</div>
+                            <div class="cont">Sexo:</div>
+                            <div class="cont">Sociable con:</div>
+                        </div>
+
+                        <div class="right" id="tam">
+                            <div class="cont">Irish Wolfhound</div>
+                            <div class="cont">Adulto</div>
+                            <div class="cont">1 año</div>
+                            <div class="cont">Macho</div>
+                            <div class="cont">Adultos, Gatos Machos y Hembras, Perros Machos y Hembras.</div>
+                        </div>
+                       
+                    </div>
+
+
+
+
+    
 
                     <div class="card__button">
                         <button type="button" class="btn btn-success">Adoptar</button>
@@ -41,6 +63,15 @@
 
                 </div>
                 </div>
+                
+
+
+
+                              
+
+
+
+                
 
                   <div class="card card__perfil" >
                   <div class="espacio">                 
