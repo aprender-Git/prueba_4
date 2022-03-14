@@ -56,53 +56,39 @@
   <div class="col-md-2 "   style="background: rgb(237 237 237); ">
    
   
-  <form class="" style="margin: 28px 1px 0px 40px;" action="">
+  <form class="" style="margin: 28px 1px 0px 40px;" action="" id="formulario_1">
 
 <h5 class="">Agregar filtros: </h5>
 <hr>
+         
+
             <div class="form-group">
-              <label for="sel1">selecciones pais</label>
-                <select class="form-control" id="sel1">
-                  <option>Mexico</option>
-                  <option>Estados Unidos</option>
-                  <option>Canada</option>
+              <label for="sel1">selecciones Estado 
+              </label>
+                <select class="form-control" required name="descripcion" id="sel1">
+                <option value=""></option>
+                  <option value="veracruz">veracruz</option>
+                  <option value="puebla" >puebla</option>
                 </select>
             </div>
 
             <div class="form-group">
-              <label for="sel1">selecciones Estado</label>
-                <select class="form-control" id="sel1">
-                  <option>veracruz</option>
-                  <option>Puebla</option>
-                  <option>Guanajuato</option>
-                  <option>Monterrey</option>
-
+              <label for="sel1">selecciones GENERO</label>
+                <select class="form-control" required name="precio" id="sel1">
+                <option value=""></option>
+                  <option value="1">MACHO</option>
+                  <option value="2">HEMBRA</option>
                 </select>
             </div>
 
-            <div class="form-group">
-              <label for="sel1">selecciones municipio</label>
-                <select class="form-control" id="sel1">
-                  <option>Orizaba</option>
-                  <option>Cordoba</option>
-                  <option>Fortin</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-              <label for="sel1">Amigable con</label>
-                <select class="form-control" id="sel1">
-                  <option>Niños</option>
-                  <option>Adultos</option>
-                  <option>Gatos</option>
-                  <option>Perros</option>
-                </select>
-            </div>
+         
 <div class="card__button">
-<button type="button" class="btn btn-dark btn-block ">Buscar </button>
+<button type="button" id="btn_buscar" class="btn btn-dark btn-block ">Buscar </button>
 </div>
 
     </form>
+    <table class="table table-striped" id="tabla1">
+            </table>
  
   </div>
     <div class="col-md-10" style="background-color: rgb(237 237 237);" >
@@ -115,4 +101,29 @@
 </div>
 
 </body>
+<script>
+  //creacion de buton escucha onclick
+  document.getElementById("btn_buscar").addEventListener("click", ()=> buscar());
+  //metodo o funcion buscar
+           function buscar(){
+            $("#tabla1 > tbody").empty();//limpia solo los registros del body
+             const datos = new FormData(document.getElementById("formulario_1"));
+             fetch('vistas/header/buscar.php', {
+               method: 'POST',
+               body: datos
+             })
+             .then(Response => Response.json())
+             .then(datos =>{
+              let cad = '<tr><th>id</th><th>nombre</th></tr>';
+                        for (let articulo of datos) {
+                          cad += `<tr><td>${articulo.id}</td>
+                          <td>${articulo.nombre}</td></tr>`;
+                        }
+                    document.getElementById("tabla1").innerHTML = cad;
+
+              })
+
+
+           }
+</script>
 </html>

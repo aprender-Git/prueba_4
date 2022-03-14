@@ -9,8 +9,6 @@ include_once "./Entidad/Mascota.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página card</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="css/dark.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
@@ -36,6 +34,16 @@ include_once "./Entidad/Mascota.php";
                     <h4 class="card-title card__nombre"><?php echo $key->getNombre();?>
 </h4>
                     <p class="card-text">
+                        <div class="row">
+                            <div class="col-6 ">
+                                
+                            </div>
+
+                            <div class="col-6 ">
+                                
+                            </div>
+
+                        </div>
                         Raza aparente: <?php echo $key->getRaza();?> <br>
                         tamaño :  <?php echo $key->getTipo();?> <br>
                         fecha encontrado : <?php echo $key->getFechaEncontrado();?> <br>
@@ -68,7 +76,6 @@ include_once "./Entidad/Mascota.php";
     </section>
 
 
-    <script src="js/main.js"></script>
 </body>
 
 </html>
