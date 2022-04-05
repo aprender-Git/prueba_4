@@ -19,6 +19,13 @@ include_once "./Entidad/Mascota.php";
 
     <section class="contenedor">
     <?php
+    $length    = 3;	#número de registros a mostrar
+    $start     = 0;     #posición de búsqueda
+    if (isset($_GET['pagina'])) {
+        $start = $_GET['pagina'];
+    }else{
+        $start =1;
+    }
     $instancia = new mascotas();
     $Objetos = $instancia->select();
     if ($Objetos != false) {

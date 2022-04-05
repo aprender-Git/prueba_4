@@ -9,13 +9,15 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/jquery.bootpag.min.js"></script>
+
 </head>
 <body>
 
 <h1>paginacion</h1>
 <?php
 $conexion = mysqli_connect('localhost', 'root', '','base1' );
-$porpagina =2;
+$porpagina =3;
 if (isset($_GET['pagina'])) {
     $pagina = $_GET['pagina'];
 }else{
@@ -44,6 +46,7 @@ $total_registros = mysqli_num_rows($resultado);
 $total_pagina = ceil($total_registros/$porpagina);
 //link a la primera
 echo "<center><a href='paginacion.php?pagina=1'>".'primera'."&nbsp;</a>";
+
 for ($i=1; $i <= $total_pagina; $i++) { 
 echo "<a href='paginacion.php?pagina=".$i."'>".$i."&nbsp;</a>";
 }
